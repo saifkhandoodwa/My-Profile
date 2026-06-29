@@ -3,114 +3,314 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Saif Ali Khan | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>SAIF ALI KHAN</h1>
-            <p>Web Developer | Designer | Creative Thinker | SOFTWARE DEVELOPER</p>
-        </div>
-    </header>
-
-    <section id="about">
-        <div class="container">
-            <h2>I am 21 year old. I am college student of B.C.A. (Bachelor of Computer Application) 4th Semester 2026 and I am from Sikar , Rajasthan, India Pin code :- 332316</h2>
-            <img src="SAIF.jpg" alt="SAIF ALI KAHN" class="profile-img">
-            <p>
-                Hi, I'm SAIF ALI KHAN, a passionate web developer & SOFTWARE DEVELOPER with experience in HTML, CSS, JavaScript,Kotlin ,C , C++, PYTHON, and more. 
-                I love creating responsive and user-friendly websites. Here's a little more about me and my skills.
-            </p>
-            <p>education currently B.C.A. 2024-2027</p>
-            <p>intership in A.I. at ibm</p>
-        </div>
-    </section>
-
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML & CSS</li>
-                <li>JavaScript</li>
-                <li>Responsive Design</li>
-                <li>UI/UX Design</li>
-                <li>Version Control (Git)</li>
-                <li>KOTLIN</li>
-                <li>C & C++ & PYTHON</li>
-                <li>cybersecurity</li>
-                <li>computer artitecture & oerating systems</li>
-                <li>Artificial Intelligence</li>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">S<span>K</span></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-particles"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Saif Ali Khan</h1>
+                <div class="hero-title-wrapper">
+                    <span class="hero-title-prefix">I'm a </span>
+                    <span class="typewriter" id="typewriter"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    A passionate developer crafting modern web experiences and mobile applications.
+                    Currently pursuing B.C.A. from Sikar, Rajasthan.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/saifkhandoodwa" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/saifkhandeveloper/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/saifkhan4456" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/saifdoodwa.4456/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-img-wrapper">
+                    <img src="SAIF.jpg" alt="Saif Ali Khan">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <i class="fas fa-chevron-down"></i>
+            </a>
         </div>
     </section>
 
-    <section id="projects">
+    <!-- About Section -->
+    <section id="about" class="section about">
         <div class="container">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Project 1</h3>
-                <img src="PROJECT-1.png" alt="shopping">
-                <p>Description:-
-                    <ul>
-                        <li>Shopping websitemade by me . this is practice only</li>
-                        <li>Html, Css</li>
-                        <li>Beginner level when i am i make</li>
-                    </ul>
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-content">
+                <div class="about-card" data-aos="fade-right">
+                    <div class="about-icon"><i class="fas fa-user-graduate"></i></div>
+                    <h3>Education</h3>
+                    <p>B.C.A. (Bachelor of Computer Application)</p>
+                    <p class="about-detail">4th Semester | 2024 - 2027</p>
+                </div>
+                <div class="about-card" data-aos="fade-up">
+                    <div class="about-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>Location</h3>
+                    <p>Sikar, Rajasthan, India</p>
+                    <p class="about-detail">Pin Code: 332316</p>
+                </div>
+                <div class="about-card" data-aos="fade-left">
+                    <div class="about-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3>Experience</h3>
+                    <p>AI Internship at IBM</p>
+                    <p class="about-detail">Artificial Intelligence</p>
+                </div>
+            </div>
+            <div class="about-description" data-aos="fade-up">
+                <p>
+                    I'm a 21-year-old passionate web developer and software developer with experience in 
+                    HTML, CSS, JavaScript, Kotlin, C, C++, Python, and more. I love creating responsive and 
+                    user-friendly websites and applications. I'm constantly learning and exploring new technologies
+                    to build innovative solutions.
                 </p>
             </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <img src="project-2.png" alt="bot">
-                <p>Description:- a chat bot testing website make by me (Saif Ali khan), technologies used Html and Css , and only just practice.</p>
-            </div>
-            <div class="Android app"
-                <h2>Project 3</h2>
-                <img src="project-3.png" alt="Android app Project">
-                <p>Description:- This is an app game that language is use to buid kotlin, python, firebase, aws , java, xml, assests , etc.</p>
-                <p>this is multiplayer games</p>
-                <p>mostly some code error debbung by A.I.</p>
-            </div>
-            <div class="Ai Agent"
-                <h3> Project 4 </h3>
-                <img src="project-4.png" alt="ai agentic">
-                    <a href="https://github.com/saifkhandoodwa/agentic-research-assistant"> Ai Agent</a>
-                <p>This is an agent when i get in paqrticipate in kaggle.</p>
-                <p>In this email writing, using language python</p>
-                </h3>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                    <h3>HTML & CSS</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
                 </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="skill-icon"><i class="fab fa-python"></i></div>
+                    <h3>Python</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="skill-icon"><i class="fab fa-android"></i></div>
+                    <h3>Kotlin</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>C & C++</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="350">
+                    <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Responsive Design</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="skill-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Cybersecurity</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-width="65"></div></div>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="450">
+                    <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                    <h3>Artificial Intelligence</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                    <h3>Git & GitHub</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="550">
+                    <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>UI/UX Design</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-width="72"></div></div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="resume">
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
         <div class="container">
-            <h2>Resume</h2>
-            <p>Download my resume to learn more about my experience and qualifications.</p>
-            <a href="Resume.pdf" download class="btn">Download Resume</a>
+            <h2 class="section-title" data-aos="fade-up">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="PROJECT-1.png" alt="Shopping Website">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Shopping Website</h3>
+                        <p>A responsive e-commerce website built with HTML & CSS. Practice project showcasing layout and design skills.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Responsive</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="project-2.png" alt="ChatBot Website">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>ChatBot Website</h3>
+                        <p>A chatbot testing website with interactive UI. Built to explore conversational interface design patterns.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>UI Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Multiplayer Android Game</h3>
+                        <p>A multiplayer game app built with Kotlin, Python, Firebase, AWS, and Java. Features real-time gameplay mechanics.</p>
+                        <div class="project-tags">
+                            <span>Kotlin</span>
+                            <span>Firebase</span>
+                            <span>AWS</span>
+                            <span>Java</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/saifkhandoodwa/agentic-research-assistant" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AI Agentic Assistant</h3>
+                        <p>An AI agent developed during Kaggle participation. Features email writing automation using Python and AI technologies.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>AI</span>
+                            <span>Kaggle</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
+    <!-- Resume Section -->
+    <section id="resume" class="section resume-section">
         <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: sk3598547@gmail.com</p>
-            <p>Phone: +917849862005</p>
+            <h2 class="section-title" data-aos="fade-up">Resume</h2>
+            <div class="resume-content" data-aos="fade-up">
+                <div class="resume-icon">
+                    <i class="fas fa-file-pdf"></i>
+                </div>
+                <h3>Download My Resume</h3>
+                <p>Get a detailed overview of my education, skills, experience, and achievements.</p>
+                <a href="Resume.pdf" download class="btn btn-primary">
+                    <i class="fas fa-download"></i> Download PDF
+                </a>
+            </div>
         </div>
     </section>
 
-    <footer>
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
         <div class="container">
-            <p>&copy; 2026 SAIF ALI KHAN. All rights reserved.</p>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/saifkhandeveloper/">LinkedIn</a></li>
-                <li><a href="https://github.com/saifkhandoodwa">GitHub</a></li>
-                <li><a href="https://x.com/saifkhan4456">Twitter</a></li>
-                <li><a href="https://www.instagram.com/saifdoodwa.4456/">Instagram</a></li>
-            </ul>
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-card" data-aos="fade-right">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <h3>Email</h3>
+                    <a href="mailto:sk3598547@gmail.com">sk3598547@gmail.com</a>
+                </div>
+                <div class="contact-card" data-aos="fade-up">
+                    <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                    <h3>Phone</h3>
+                    <a href="tel:+917849862005">+91 7849862005</a>
+                </div>
+                <div class="contact-card" data-aos="fade-left">
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>Location</h3>
+                    <p>Sikar, Rajasthan, India</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">S<span>K</span></div>
+                <p class="footer-text">Designed & Built by Saif Ali Khan</p>
+                <div class="footer-socials">
+                    <a href="https://github.com/saifkhandoodwa" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/saifkhandeveloper/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/saifkhan4456" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/saifdoodwa.4456/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p class="footer-copyright">&copy; 2026 Saif Ali Khan. All rights reserved.</p>
+            </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
-
-
